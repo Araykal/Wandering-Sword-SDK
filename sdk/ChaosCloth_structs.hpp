@@ -1,0 +1,35 @@
+﻿#pragma once
+
+
+
+// Package: ChaosCloth
+
+#include "Basic.hpp"
+
+
+SDK_NAMESPACE_START
+
+// Enum ChaosCloth.EChaosClothTetherMode
+// NumValues: 0x0005
+enum class EChaosClothTetherMode : uint8
+{
+	FastTetherFastLength                     = 0,
+	AccurateTetherFastLength                 = 1,
+	AccurateTetherAccurateLength             = 2,
+	MaxChaosClothTetherMode                  = 3,
+	EChaosClothTetherMode_MAX                = 4,
+};
+
+// Enum ChaosCloth.EChaosWeightMapTarget
+// NumValues: 0x0006
+enum class EChaosWeightMapTarget : uint8
+{
+	None                                     = 0,
+	MaxDistance                              = 1,
+	BackstopDistance                         = 2,
+	BackstopRadius                           = 3,
+	AnimDriveMultiplier                      = 4,
+	EChaosWeightMapTarget_MAX                = 5,
+};
+
+SDK_NAMESPACE_END

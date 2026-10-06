@@ -1,0 +1,102 @@
+﻿#pragma once
+
+
+
+// Package: BP_GuidanceDefaultStep
+
+#include "Basic.hpp"
+
+#include "BP_GuidanceDefaultStep_classes.hpp"
+#include "BP_GuidanceDefaultStep_parameters.hpp"
+
+
+SDK_NAMESPACE_START
+
+// Function BP_GuidanceDefaultStep.BP_GuidanceDefaultStep_C.ExecuteUbergraph_BP_GuidanceDefaultStep
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_GuidanceDefaultStep_C::ExecuteUbergraph_BP_GuidanceDefaultStep(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_GuidanceDefaultStep_C", "ExecuteUbergraph_BP_GuidanceDefaultStep");
+
+	Params::BP_GuidanceDefaultStep_C_ExecuteUbergraph_BP_GuidanceDefaultStep Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_GuidanceDefaultStep.BP_GuidanceDefaultStep_C.EVT_DelayResized
+// (Event, Public, BlueprintEvent)
+
+void UBP_GuidanceDefaultStep_C::EVT_DelayResized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_GuidanceDefaultStep_C", "EVT_DelayResized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_GuidanceDefaultStep.BP_GuidanceDefaultStep_C.EVT_StartStep
+// (Event, Public, BlueprintEvent)
+
+void UBP_GuidanceDefaultStep_C::EVT_StartStep()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_GuidanceDefaultStep_C", "EVT_StartStep");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_GuidanceDefaultStep.BP_GuidanceDefaultStep_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UBP_GuidanceDefaultStep_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_GuidanceDefaultStep_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_GuidanceDefaultStep.BP_GuidanceDefaultStep_C.OnMouseButtonDown_0
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+struct FEventReply UBP_GuidanceDefaultStep_C::OnMouseButtonDown_0(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_GuidanceDefaultStep_C", "OnMouseButtonDown_0");
+
+	Params::BP_GuidanceDefaultStep_C_OnMouseButtonDown_0 Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.MouseEvent = std::move(MouseEvent);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+SDK_NAMESPACE_END

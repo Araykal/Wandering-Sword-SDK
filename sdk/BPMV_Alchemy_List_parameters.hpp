@@ -1,0 +1,90 @@
+﻿#pragma once
+
+
+
+// Package: BPMV_Alchemy_List
+
+#include "Basic.hpp"
+
+#include "SlateCore_structs.hpp"
+#include "NeoUI_structs.hpp"
+
+
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
+
+// Function BPMV_Alchemy_List.BPMV_Alchemy_List_C.ExecuteUbergraph_BPMV_Alchemy_List
+// 0x0040 (0x0040 - 0x0000)
+struct BPMV_Alchemy_List_C_ExecuteUbergraph_BPMV_Alchemy_List final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                K2Node_ComponentBoundEvent_Item_1;                 // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ENeoUIFocusWidgetScenario                     K2Node_Event_Scenario;                             // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FNeoUIFocusWidgetParam                 K2Node_Event_Param;                                // 0x0018(0x0010)()
+	class UObject*                                K2Node_ComponentBoundEvent_Item;                   // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUserWidget*                            K2Node_ComponentBoundEvent_Widget;                 // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                CallFunc_ResetAndFocus_ReturnValue;                // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BPMV_Alchemy_List_C_ExecuteUbergraph_BPMV_Alchemy_List;
+
+// Function BPMV_Alchemy_List.BPMV_Alchemy_List_C.BndEvt__BPMV_Alchemy_List_LIST_K2Node_ComponentBoundEvent_1_OnListEntryInitializedDynamic__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct BPMV_Alchemy_List_C_BndEvt__BPMV_Alchemy_List_LIST_K2Node_ComponentBoundEvent_1_OnListEntryInitializedDynamic__DelegateSignature final
+{
+public:
+	class UObject*                                Item;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUserWidget*                            Widget;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BPMV_Alchemy_List_C_BndEvt__BPMV_Alchemy_List_LIST_K2Node_ComponentBoundEvent_1_OnListEntryInitializedDynamic__DelegateSignature;
+
+// Function BPMV_Alchemy_List.BPMV_Alchemy_List_C.EVT_FocusWidgetForScenario
+// 0x0018 (0x0018 - 0x0000)
+struct BPMV_Alchemy_List_C_EVT_FocusWidgetForScenario final
+{
+public:
+	ENeoUIFocusWidgetScenario                     scenario;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FNeoUIFocusWidgetParam                 Param;                                             // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_BPMV_Alchemy_List_C_EVT_FocusWidgetForScenario;
+
+// Function BPMV_Alchemy_List.BPMV_Alchemy_List_C.BndEvt__BPMV_Cooking_List_LIST_K2Node_ComponentBoundEvent_0_SimpleListItemEventDynamic__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct BPMV_Alchemy_List_C_BndEvt__BPMV_Cooking_List_LIST_K2Node_ComponentBoundEvent_0_SimpleListItemEventDynamic__DelegateSignature final
+{
+public:
+	class UObject*                                Item;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BPMV_Alchemy_List_C_BndEvt__BPMV_Cooking_List_LIST_K2Node_ComponentBoundEvent_0_SimpleListItemEventDynamic__DelegateSignature;
+
+// Function BPMV_Alchemy_List.BPMV_Alchemy_List_C.FocusWidgetForScenario_Direct
+// 0x0028 (0x0028 - 0x0000)
+struct BPMV_Alchemy_List_C_FocusWidgetForScenario_Direct final
+{
+public:
+	ENeoUIFocusWidgetScenario                     scenario;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FNeoUIFocusWidgetParam                 Param;                                             // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class UWidget*                                ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                CallFunc_ResetAndFocus_ReturnValue;                // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BPMV_Alchemy_List_C_FocusWidgetForScenario_Direct;
+
+// Function BPMV_Alchemy_List.BPMV_Alchemy_List_C.GotoRecipe
+// 0x0020 (0x0020 - 0x0000)
+struct BPMV_Alchemy_List_C_GotoRecipe final
+{
+public:
+	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UNeoUIUniversalModuleVMBase*            CallFunc_GetNeoUIVM_ReturnValue;                   // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                CallFunc_ChangeNaviFocus_ReturnValue;              // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BPMV_Alchemy_List_C_GotoRecipe;
+
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

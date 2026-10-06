@@ -1,0 +1,59 @@
+﻿#pragma once
+
+
+
+// Package: BPMV_JHBackpack_NoMoney
+
+#include "Basic.hpp"
+
+#include "NeoUI_structs.hpp"
+
+
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
+
+// Function BPMV_JHBackpack_NoMoney.BPMV_JHBackpack_NoMoney_C.ExecuteUbergraph_BPMV_JHBackpack_NoMoney
+// 0x0058 (0x0058 - 0x0000)
+struct BPMV_JHBackpack_NoMoney_C_ExecuteUbergraph_BPMV_JHBackpack_NoMoney final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                CallFunc_FindFirstElement_ReturnValue;             // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UNeoUIContainerVisualBase*>      K2Node_MakeArray_Array;                            // 0x0018(0x0010)(ReferenceParm, ContainsInstancedReference)
+	int32                                         CallFunc_GetValueSafe_Int32_ReturnValue;           // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ENeoUIFocusWidgetScenario                     K2Node_Event_Scenario;                             // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FNeoUIFocusWidgetParam                 K2Node_Event_Param;                                // 0x0030(0x0010)()
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0040(0x0018)()
+};
+DUMPER7_ASSERTS_BPMV_JHBackpack_NoMoney_C_ExecuteUbergraph_BPMV_JHBackpack_NoMoney;
+
+// Function BPMV_JHBackpack_NoMoney.BPMV_JHBackpack_NoMoney_C.EVT_FocusWidgetForScenario
+// 0x0018 (0x0018 - 0x0000)
+struct BPMV_JHBackpack_NoMoney_C_EVT_FocusWidgetForScenario final
+{
+public:
+	ENeoUIFocusWidgetScenario                     scenario;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FNeoUIFocusWidgetParam                 Param;                                             // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_BPMV_JHBackpack_NoMoney_C_EVT_FocusWidgetForScenario;
+
+// Function BPMV_JHBackpack_NoMoney.BPMV_JHBackpack_NoMoney_C.FocusWidgetForScenario_Direct
+// 0x0028 (0x0028 - 0x0000)
+struct BPMV_JHBackpack_NoMoney_C_FocusWidgetForScenario_Direct final
+{
+public:
+	ENeoUIFocusWidgetScenario                     scenario;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FNeoUIFocusWidgetParam                 Param;                                             // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class UWidget*                                ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                CallFunc_FindFirstElement_ReturnValue;             // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BPMV_JHBackpack_NoMoney_C_FocusWidgetForScenario_Direct;
+
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

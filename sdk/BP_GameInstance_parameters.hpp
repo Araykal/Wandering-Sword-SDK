@@ -1,0 +1,23 @@
+﻿#pragma once
+
+
+
+// Package: BP_GameInstance
+
+#include "Basic.hpp"
+
+
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
+
+// Function BP_GameInstance.BP_GameInstance_C.ExecuteUbergraph_BP_GameInstance
+// 0x0004 (0x0004 - 0x0000)
+struct BP_GameInstance_C_ExecuteUbergraph_BP_GameInstance final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_GameInstance_C_ExecuteUbergraph_BP_GameInstance;
+
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

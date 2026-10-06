@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.20)
+project(wandering_native_bridge LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 20)
+add_library(wandering_native_bridge SHARED bridge.cpp)
+target_include_directories(wandering_native_bridge PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+target_compile_definitions(wandering_native_bridge PRIVATE WIN32_LEAN_AND_MEAN)

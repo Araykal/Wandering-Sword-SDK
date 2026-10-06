@@ -1,0 +1,34 @@
+﻿#pragma once
+
+
+
+// Package: JsonUtilities
+
+#include "Basic.hpp"
+
+#include "CoreUObject_classes.hpp"
+
+
+SDK_NAMESPACE_START
+
+// Class JsonUtilities.JsonUtilitiesDummyObject
+// 0x0000 (0x0028 - 0x0028)
+class UJsonUtilitiesDummyObject final : public UObject
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("JsonUtilitiesDummyObject")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"JsonUtilitiesDummyObject")
+	}
+	static class UJsonUtilitiesDummyObject* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UJsonUtilitiesDummyObject>();
+	}
+};
+DUMPER7_ASSERTS_UJsonUtilitiesDummyObject;
+
+SDK_NAMESPACE_END

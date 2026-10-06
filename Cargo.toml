@@ -1,0 +1,19 @@
+[package]
+name = "wandering_hack"
+version = "0.1.0"
+edition = "2024"
+[lib]
+name = "wandering_hack"
+crate-type = ["cdylib", "rlib"]
+[[bin]]
+name = "wandering_hack_loader"
+path = "src/main.rs"
+[[bin]]
+name = "wandering_hack_injector"
+path = "src/bin/injector.rs"
+[dependencies]
+slint = "1.13.1"
+windows-sys = { version = "0.61", features = ["Win32_Foundation", "Win32_System_Threading", "Win32_System_LibraryLoader", "Win32_UI_Input_KeyboardAndMouse", "Win32_UI_WindowsAndMessaging", "Win32_System_Diagnostics_ToolHelp", "Win32_System_Diagnostics_Debug", "Win32_System_Memory", "Win32_Security"] }
+[build-dependencies]
+slint-build = "1.13.1"
+

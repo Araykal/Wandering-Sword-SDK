@@ -1,0 +1,41 @@
+﻿#pragma once
+
+
+
+// Package: EyeTracker
+
+#include "Basic.hpp"
+
+#include "Engine_classes.hpp"
+
+
+SDK_NAMESPACE_START
+
+// Class EyeTracker.EyeTrackerFunctionLibrary
+// 0x0000 (0x0028 - 0x0028)
+class UEyeTrackerFunctionLibrary final : public UBlueprintFunctionLibrary
+{
+public:
+	static bool GetGazeData(struct FEyeTrackerGazeData* OutGazeData);
+	static bool GetStereoGazeData(struct FEyeTrackerStereoGazeData* OutGazeData);
+	static bool IsEyeTrackerConnected();
+	static bool IsStereoGazeDataAvailable();
+	static void SetEyeTrackedPlayer(class APlayerController* PlayerController);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EyeTrackerFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EyeTrackerFunctionLibrary")
+	}
+	static class UEyeTrackerFunctionLibrary* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEyeTrackerFunctionLibrary>();
+	}
+};
+DUMPER7_ASSERTS_UEyeTrackerFunctionLibrary;
+
+SDK_NAMESPACE_END
